@@ -21,7 +21,7 @@ public class FtoCService {
 		celsius = (fahrenheit - 32)*5/9; 
 		jsonObject.put("F Value", fahrenheit); 
 		jsonObject.put("C Value", celsius);
- 
+        System.err.println("Sample Line");
 		String result = "@Produces(\"application/json\") Output: \n\nF to C Converter Output: \n\n" + jsonObject;
 		return Response.status(200).entity(result).build();
 	  }
